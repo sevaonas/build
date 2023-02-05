@@ -1,8 +1,9 @@
 @import "vars"
+@import "fonts"
 
 
 body
-    font-family: sans-serif
+    +reg
 
 .container
     max-width: 1170px
@@ -12,6 +13,7 @@ body
         width: 90%
 
 .button
+    +bold
     background-color:$buttons
     color: $accent    
     border: none
@@ -39,6 +41,7 @@ body
         font-size: 13px
         font-weight: 400
     &__phone
+        +bold
         font-size: 20px
         font-weight: 400
         color: $accent 
@@ -66,6 +69,7 @@ body
             margin-bottom: 30px
             
           &__title
+            +bold
             font-size: 41px
             color: $accent
             padding-right: 200px
