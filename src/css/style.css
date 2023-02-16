@@ -348,7 +348,7 @@ body {
   .price__title {
     display: block;
     width: 400px;
-    margin-left: 60px;
+    margin-left: -25px;
   }
 }
 .price__subtitle {
@@ -365,8 +365,7 @@ body {
 }
 @media (max-width: 785px) {
   .cards {
-    margin-left: 80px;
-    max-width: 96%;
+    margin-left: -10px;
   }
 }
 
