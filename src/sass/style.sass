@@ -35,6 +35,13 @@ body
     +bold
     text-align: center
     line-height: 45px
+
+.section-subtitle
+    color: #000
+    font-size: 20px
+    text-align: center
+    display: block
+
         
 
 
@@ -238,6 +245,95 @@ body
 .slider
     &__image
         margin: auto
+
+.price
+    padding: 100px 0
+    &__title            
+        margin-bottom: 60px
+        @media (max-width: 640px)
+            display: block
+            width: 400px
+            margin-left: 60px
+    &__subtitle            
+        margin-bottom: 60px
+    &__card
+        margin-bottom: 30px
+
+
+
+.cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between  
+    @media (max-width: 785px)
+        margin-left: 80px
+        max-width: 96%
+             
+.card
+        @media (max-width: 785px)
+          width: 100%                                                                                
+        text-align: center
+        border: 1px solid $border-card
+        transition: .2s
+        &:hover
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+            .card__image::before
+                opacity: 1
+        &__text           
+            padding: 40px               
+        &__title
+            margin-top: 0
+        &__image
+            position: relative         
+                      
+            img
+                @media (max-width: 1041px)
+                  display: initial
+                display: block
+                
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+                opacity: 0
+                transition: .2s
+
+        &__title
+            font-size: 18px
+            color: #000
+            margin-bottom: 30px
+        &__link
+            display: inline-block
+            +bold
+            text-decoration: none
+            color: $accent
+            position: relative
+            &:hover
+                &::after
+                    height: 13px  
+                
+            &::after     
+              content: ''
+              display: block
+              position: absolute
+              z-index: -1
+              button: -4px
+              left: 0
+              width: 100%
+              height: 3px
+              background-color: $wain-color
+              transition: .2s
+
+
+
+
+
+
+
 
 
 
