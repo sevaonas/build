@@ -592,7 +592,7 @@ body {
   .benefit {
     margin-bottom: 30px;
     width: 340px;
-    margin-left: -86px;
+    margin-left: -66px;
   }
 }
 .benefit__image {
@@ -614,7 +614,7 @@ body {
   .benefit__text {
     font-size: 12px;
     font-weight: 400;
-    width: 340px;
+    width: 205px;
     margin-left: auto;
   }
 }
