@@ -79,12 +79,12 @@ body
 
 .main
         background-color: $grey
-   
+        
         &-block
-          display: flex
-          padding: 30px 0px 15px
-          @media ( max-width:1200px )
-            flex-direction: column
+            display: flex
+            padding: 50px 0px 50px
+            @media ( max-width:1200px )
+             flex-direction: column
             
           
         &-text    
@@ -114,8 +114,9 @@ body
                 line-height: 1.4
 
         &-image 
-          margin-right: -55px
-          @media ( max-width:1200px )
+          
+          img
+            @media ( max-width:1200px )
             width: 100%
 
 
@@ -206,12 +207,16 @@ body
     &-call
         line-height: 24px
         display: flex
-        justify-content: space-between           
+        justify-content: space-between
+        @media (max-width: 1200px)
+            flex-direction: column           
     &__text
         margin-top: 30px
         padding-right: 100px
         font-size: 15px
     &__zavolej
+        @media (max-width: 1200px)
+            margin-top: 0px
         margin-top: 30px
         max-width: 200px
         font-size: 15px
@@ -418,9 +423,14 @@ body
     padding: 100px
     &__block
         margin-bottom: 150px
+
+            
 .benefits
     display: flex
     justify-content: space-between
+    @media (max-width: 1200px)
+        flex-wrap: wrap
+       
 
 .benefit
     background-color: $benefit-bg
@@ -430,11 +440,24 @@ body
     justify-content: space-between
     max-width: 370px
     position: relative
+    @media (max-width: 1200px)
+        margin-bottom: 30px
+        width: 340px
+        margin-left: -86px
+        
     &__image
         position: absolute
         bottom: 0
         left: 0
+        @media (max-width: 1200px)
+            width: 100%
+        
     &__text
+        @media (max-width: 1200px)
+         font-size: 12px
+         font-weight: 400
+         width: 340px
+         margin-left: auto
         margin: 26px 100px 0 26px
         font-size: 16px
         line-height: 23px
@@ -443,10 +466,26 @@ body
     
 .documents__title
     margin-bottom: 100px
+    @media (max-width: 1200px)
+        width: 253px
+        font-size: 18px
+        line-height: normal
+        display: block
+        margin-left: -40px
+        margin-bottom: 93px
 .documents-block
     display: flex
     justify-content: space-between
+    @media (max-width: 1200px)
+        flex-wrap: wrap
+        width: 100%
+        margin-left: -50px
     &__text
+        @media (max-width: 1200px)
+            font-size: 14px
+            display: block
+            line-height: normal
+            margin-bottom: 44px
         text-align: center
         margin-top: 40px
         line-height: 24px

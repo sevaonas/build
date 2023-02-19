@@ -113,7 +113,7 @@ body {
 }
 .main-block {
   display: flex;
-  padding: 30px 0px 15px;
+  padding: 50px 0px 50px;
 }
 @media (max-width: 1200px) {
   .main-block {
@@ -160,13 +160,8 @@ body {
     line-height: 1.4;
   }
 }
-.main-image {
-  margin-right: -55px;
-}
-@media (max-width: 1200px) {
-  .main-image {
-    width: 100%;
-  }
+.main-image img {
+  width: 100%;
 }
 .main-list {
   margin: 40px 0 0 0;
@@ -296,6 +291,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1200px) {
+  .offer-call {
+    flex-direction: column;
+  }
+}
 .offer__text {
   margin-top: 30px;
   padding-right: 100px;
@@ -305,6 +305,11 @@ body {
   margin-top: 30px;
   max-width: 200px;
   font-size: 15px;
+}
+@media (max-width: 1200px) {
+  .offer__zavolej {
+    margin-top: 0px;
+  }
 }
 .offer__phone {
   text-decoration: none;
@@ -568,6 +573,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1200px) {
+  .benefits {
+    flex-wrap: wrap;
+  }
+}
 
 .benefit {
   background-color: #f7f7f7;
@@ -578,15 +588,35 @@ body {
   max-width: 370px;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .benefit {
+    margin-bottom: 30px;
+    width: 340px;
+    margin-left: -86px;
+  }
+}
 .benefit__image {
   position: absolute;
   bottom: 0;
   left: 0;
 }
+@media (max-width: 1200px) {
+  .benefit__image {
+    width: 100%;
+  }
+}
 .benefit__text {
   margin: 26px 100px 0 26px;
   font-size: 16px;
   line-height: 23px;
+}
+@media (max-width: 1200px) {
+  .benefit__text {
+    font-size: 12px;
+    font-weight: 400;
+    width: 340px;
+    margin-left: auto;
+  }
 }
 .benefit__text strong {
   font-family: "Museo Sans Bold";
@@ -596,16 +626,41 @@ body {
 .documents__title {
   margin-bottom: 100px;
 }
+@media (max-width: 1200px) {
+  .documents__title {
+    width: 253px;
+    font-size: 18px;
+    line-height: normal;
+    display: block;
+    margin-left: -40px;
+    margin-bottom: 93px;
+  }
+}
 
 .documents-block {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .documents-block {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -50px;
+  }
 }
 .documents-block__text {
   text-align: center;
   margin-top: 40px;
   line-height: 24px;
   font-size: 18px;
+}
+@media (max-width: 1200px) {
+  .documents-block__text {
+    font-size: 14px;
+    display: block;
+    line-height: normal;
+    margin-bottom: 44px;
+  }
 }
 
 .modal {
