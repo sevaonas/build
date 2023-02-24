@@ -14,6 +14,18 @@ $(document) .ready(function(){
     close.on('click', function(){
         modal.removeClass('modal_active');
     }); 
+
+    //validace formulářů
+    $('#brief-form').validate({
+      rules: {
+        username: "required",
+        email: {
+          reguired: true,
+          email: true
+        }
+      }
+    });
+
     
     //napojení slideru
     $('.slider').slick({
