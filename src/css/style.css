@@ -875,6 +875,11 @@ body {
   padding-top: 100px;
   padding-left: 200px;
 }
+@media (max-width: 430px) {
+  .contacts {
+    padding-left: 66px;
+  }
+}
 .contacts-block {
   display: flex;
   justify-content: flex-end;
