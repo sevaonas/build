@@ -607,7 +607,9 @@ body
              width: 349px
              margin-bottom: 17px
              margin-right: auto
-             margin-left: 0px
+             margin-left: 150px
+        @media (max-width: 390px)
+          margin-left: -5px  
 
                     
     &__subtitle
@@ -620,6 +622,7 @@ body
         @media (max-width: 768px)
             margin-top: 27px
             
+            
     &__description
         font-size: 15px
 
@@ -628,6 +631,12 @@ body
     @media (max-width: 768px)
     
 .map
+    @media (max-width: 768px)
+      width: 100%
+      padding-top: 650px
+      margin: auto
+    @media (max-width: 390px)
+        padding-top: 560px
     width: 50%
     position: absolute
     left: 0
@@ -638,14 +647,33 @@ body
     padding-top: 100px
     padding-left: 200px
     &-block
+        @media (max-width: 768px)
+           display: block
         display: flex
         justify-content: flex-end      
     &__title
+        @media (max-width: 768px)
+            width: 380px
+            margin-left: -60px
+            margin-top: 67px
+            font-size: 18px
+            margin-top: -30px
+        @media (max-width: 390px)
+            margin-left: -170px
+            margin-top: 125px
+            padding-top: 0px
+            margin-top: -40px
         +bold
         font-size: 24px
         line-height: 33px
         margin-bottom: 100px
     &-list
+        @media (max-width: 768px)
+          margin-left: -60px
+          margin-top: -50px
+        @media (max-width: 390px)
+            margin-left: -170px
+            margin-top: -60px
         padding: 0
         list-style-type: none
         &__icon

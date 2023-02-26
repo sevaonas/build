@@ -820,7 +820,12 @@ body {
     width: 349px;
     margin-bottom: 17px;
     margin-right: auto;
-    margin-left: 0px;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 390px) {
+  .form__title {
+    margin-left: -5px;
   }
 }
 .form__subtitle {
@@ -852,6 +857,18 @@ body {
   left: 0;
   top: 0;
 }
+@media (max-width: 768px) {
+  .map {
+    width: 100%;
+    padding-top: 650px;
+    margin: auto;
+  }
+}
+@media (max-width: 390px) {
+  .map {
+    padding-top: 560px;
+  }
+}
 
 .contacts {
   flex-basis: 50%;
@@ -862,6 +879,11 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .contacts-block {
+    display: block;
+  }
+}
 .contacts__title {
   font-family: "Museo Sans Bold";
   font-weight: 700;
@@ -869,9 +891,38 @@ body {
   line-height: 33px;
   margin-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .contacts__title {
+    width: 380px;
+    margin-left: -60px;
+    margin-top: 67px;
+    font-size: 18px;
+    margin-top: -30px;
+  }
+}
+@media (max-width: 390px) {
+  .contacts__title {
+    margin-left: -170px;
+    margin-top: 125px;
+    padding-top: 0px;
+    margin-top: -40px;
+  }
+}
 .contacts-list {
   padding: 0;
   list-style-type: none;
+}
+@media (max-width: 768px) {
+  .contacts-list {
+    margin-left: -60px;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 390px) {
+  .contacts-list {
+    margin-left: -170px;
+    margin-top: -60px;
+  }
 }
 .contacts-list__icon {
   width: 20px;
